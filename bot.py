@@ -3,7 +3,7 @@ import wikipedia
 from aiogram import Bot, Dispatcher, executor, types
 
 wikipedia.set_lang('uz')
-API_TOKEN = '5153518417:AAHq2PlunYkjpPzKvplKY_kTr-gyX_Sz6JE'
+API_TOKEN = ''
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
-
+# handler qismi
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
 
